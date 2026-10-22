@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS GlassMesh Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="studio-layout">
+    <div class="controls-panel">
+      <h2>Glass & Mesh Controls</h2>
+      <div class="control-group"><label>Blur: <span id="blurVal">16px</span></label><input type="range" id="blurInput" min="0" max="40" value="16"></div>
+      <div class="control-group"><label>Opacity: <span id="opacityVal">0.25</span></label><input type="range" id="opacityInput" min="5" max="95" value="25"></div>
+      <div class="control-group"><label>Border Opacity: <span id="borderVal">0.3</span></label><input type="range" id="borderInput" min="0" max="100" value="30"></div>
+      <div class="control-group"><label>Corner Radius: <span id="radiusVal">20px</span></label><input type="range" id="radiusInput" min="0" max="50" value="20"></div>
+      <div class="code-box">
+        <h3>Generated CSS</h3>
+        <pre><code id="cssCodeOutput"></code></pre>
+        <button id="copyCssBtn" class="btn">📋 Copy CSS</button>
+      </div>
+    </div>
+    <div class="preview-stage">
+      <div class="mesh-bg">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+      </div>
+      <div id="glassCard" class="glass-card">
+        <div class="card-chip">PRODIGY // CARD</div>
+        <h3>Glassmorphism UI</h3>
+        <p>Ultra-smooth frosted glass aesthetics with dynamic depth perception and subpixel precision.</p>
+        <div class="card-footer"><span>Sabhyam Trivedy</span><span>2026 Edition</span></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
